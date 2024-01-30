@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Form from './components/Form';
+import View from './components/View';
 
 function App() {
   //Having state at the highest level to share amongst the children
@@ -21,9 +22,10 @@ function App() {
   return (
     <>
     <Form todoList={todoList} setTodoList={setTodoList} task={task} setTask={setTask} />
+    <View todoList={todoList} setTodoList={setTodoList} task={task} setTask={setTask} />
     
     </>
   )
 }
 
-export default App
+export default App;
